@@ -1,0 +1,287 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:url("bgimg.jpg") no-repeat fixed;
+    background-size:cover;
+}
+.box,.smallbox,.aboutcontainer,.skillcontainer,.contactcontainer,.projectcontainer{
+    display: flex;
+}
+.box,.aboutbox p,.skillcontainer{
+    align-items: center;
+}
+.container{
+    width: 22%;  
+    margin: 5%;
+    border: double #b6b6b4;
+}
+.container,.container1,.container2,.container4{
+    padding-bottom: 40%;
+}
+.container,.container1,.container2,.container3,.container4,.aboutbox,.imgBox,.skillcirclebox,.skillcircle,.contactcontainer,input[type=button],.projectcontainer,.projectbox1,.projectbox2,.projectbox3{
+    height: 0;
+}
+.container img{
+    width: 50%;
+    display: block;
+    margin: 7% auto;
+}
+.container img,.column img,.skillcircle,.circle{
+    border-radius: 50%;
+}
+.smallbox,.column img,.aboutbox{
+    width: 70%;
+}
+.smallbox,input[type=button]{
+    margin: auto;
+}
+.smallbox{
+    flex-direction: row;
+}
+.column{
+    float: left;
+}
+.column img{
+    border: 1pt solid white;
+}
+.column img:hover{
+    width: 75%;
+    box-shadow: 0px 6px 5px #c9c0bb;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+li{
+    display:block;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1%;
+   /* border: 1px solid white;*/
+    text-decoration: none;
+    font-size: 2.3vw;
+    color: #5cb3ff;
+    text-align: center;
+}
+li:hover{
+    color: wheat;
+    background: radial-gradient(#93917c,transparent);
+    border-radius: 1rem;
+}
+.box h1{
+    font-size: 2.7vw;
+    font-family: Garamond;
+    padding-left: 10px;
+    > span{
+        font-size: 6vw;
+    }
+}
+.box h1,h4{
+    background: linear-gradient(90deg,#5cb3ff,#93917c,#5cb3ff);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container1,.container2,.container3,.container4{
+    width: 90%;
+    margin: 7% auto;
+   /*border:1px solid white;*/
+   background: radial-gradient(ellipse at center,#045f5f 0%,transparent 95%);
+}
+.container1 h2,.container2 h2,.container3 h2,.container4 h2{
+    font-size: 4vw;
+}
+.container1 h2,.container2 h2,.container4 h2{
+    padding-left: 20px;
+}
+.container1 h2,.container2 h2,.container3 h2,.container4 h2,.imgBox:hover span{
+    color:#5cb3ff;
+}
+.container1:hover h2,.container2:hover h2,.container3:hover h2,.container4:hover h2{
+    text-decoration: overline #b6b6b4;
+}
+.aboutcontainer,.imgBox img,.skillcircle,.circle{
+    width: 100%;
+}
+.aboutbox{
+    padding-bottom: 24%;
+    /*border:1px solid white;*/
+    margin-left: 3%;
+}
+.aboutbox p,.contactbox p,.skillcontainer p,input[type=button]{
+    color:#b6b6b4;
+}
+.aboutbox p,.imgBox:hover span,.skillcontainer p,input[type=button],h4{
+    font-size: 2vw;
+}
+.aboutbox p{
+    text-align: justify;
+    line-break: strict;
+    font-family: Segoe UI;
+}
+.aboutbox p,.contactbox p{
+    line-break: strict;
+}
+.imgBox{
+    width: 23%;
+    padding-bottom: 20%;
+    float: right;
+    padding-left: 10px;
+}
+.imgBox,.imgBox img{
+    border-radius: 20px;
+}
+.imgBox span{
+    float: right;
+    color: transparent;
+    font-family: Trebuchet MS;
+}
+.skillcontainer{
+    width:90%;
+    /*border:1px solid white;*/
+}
+.skillcontainer,.skillcontainer p{
+    margin:0 auto;
+}
+.skillcirclebox{
+    width:30%;
+    padding-bottom: 30%;
+    /*border:1px solid white;*/
+   /* margin-left: 3%;*/
+}
+.skillcircle{
+    position: relative;
+    padding-bottom: 100%;
+    background-color: #fff;
+}
+.circle{
+    height: 100%;
+    position:absolute;
+}
+.circle1{
+    background-color: #ff5733;
+}
+.circle2{
+    background-color: #ffbd33;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+}
+.circle3{
+    background-color: #33ff57;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+}
+.circle4{
+    background-color: #3366ff;
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 30%;
+}
+.circle5{
+    background-color: burlywood;
+    width:20%;
+    height:20%;
+    top:40%;
+    left:40%;
+}
+.skillcontainer p{
+    padding-left:10px;
+}
+.skillcontainer p,.contactbox p,input[type=button],h4{
+    font-family: Lucida Sans;
+}
+.container3{
+    padding-bottom: 45%;
+    /*border:1px solid white;*/
+}
+.container3 h2,.container4 h2{
+    text-align: center;
+}
+.projectcontainer{
+    width:95%;
+    padding-bottom: 33%;
+    margin:0 auto;
+}
+.projectbox1,.projectbox2,.projectbox3{
+    width:25%;
+    padding-bottom: 27%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border:1px solid white;
+}
+.projectbox1,.projectbox3{
+    margin:4% auto;
+}
+.projectbox1:hover,.projectbox2:hover,.projectbox3:hover{
+    transform: scale(1.2);
+}
+.projectbox1 h1,.projectbox2 h1,.projectbox3 h1{
+    font-size: 2vw;
+    color: #5cb3ff;
+    text-align: center;
+}
+.projectbox1 p,.projectbox2 p,.projectbox3 p{
+    color: #93917c;
+    text-align: justify;
+    font-size: 1.5vw;
+    padding: 5%;
+    line-break: strict;
+}
+.projectbox1 a,.projectbox2 a,.projectbox3 a{
+    color:#93917c;
+}
+.contactcontainer{
+    width:95%;
+    padding-bottom: 28%;
+    /*border:1px solid white;*/
+    margin: 5% auto;
+}
+.contactbox{
+    width: 39%;
+}
+.contactbox h3{
+    color: #5cb3ff;
+    font-size: 3vw;
+    padding-left: 10%;
+}
+
+.contactbox p{
+    font-size: 1.6vw;
+    margin: auto 10%;
+}
+.contactbox a{
+    text-decoration: none;
+    color:#b6b6b4;
+}
+input[type=button]
+{
+    width: 58%;
+    padding-bottom: 13%;
+    padding-top: 1%;
+    border-radius: 2rem;
+    border: 0.5px groove #b6b6b4;
+    background-color: transparent;
+}
+input[type=button]:hover
+{
+    box-shadow: 0 8px 7px #93917c;
+}
+.addressbox{
+    width: 60%;
+    padding-bottom:30%;
+    background: url("addressimg.png") no-repeat scroll;
+    background-size: 100% 100%;
+    border-radius: 1rem;
+}
+h4{
+    text-align: center;
+}
+
+
